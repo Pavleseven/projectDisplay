@@ -1,7 +1,14 @@
 import React from "react";
+import PersonalCard from "./PersonalCard";
+import List from "./List";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div className="container">
+      <PersonalCard />
+      <List />
+    </div>
+  );
 }
 
 export default Home;

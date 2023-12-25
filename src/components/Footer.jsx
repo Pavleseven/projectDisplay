@@ -1,7 +1,12 @@
 import React from "react";
+import GitLink from "./GitLink";
 
 function Footer() {
-  return <div>Footer</div>;
+  return (
+    <div className="footer">
+      <GitLink />
+    </div>
+  );
 }
 
 export default Footer;
