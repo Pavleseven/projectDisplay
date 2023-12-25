@@ -16,8 +16,12 @@ function PersonalCard() {
 
       <ul>
         <span>Skills:</span>
-        {skills.map((skill) => {
-          return <li style={{ background: skill.color }}>{skill.skill}</li>;
+        {skills.map((skill, i) => {
+          return (
+            <li style={{ background: skill.color }} key={i}>
+              {skill.skill}
+            </li>
+          );
         })}
       </ul>
       <ul>

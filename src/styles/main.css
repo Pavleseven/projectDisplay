@@ -132,3 +132,15 @@ a {
   padding: 0.6rem;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .component {
+    width: 100%;
+  }
+  .list-component {
+    width: 100%;
+  }
+}

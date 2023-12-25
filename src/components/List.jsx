@@ -19,8 +19,12 @@ function Li({ p }) {
       <p>About: {p.description}</p>
       <ul className="proj-ul">
         <span>Languages Used:</span>
-        {p.langUsed.map((lang) => {
-          return <li style={{ background: lang[1] }}>{lang[0]}</li>;
+        {p.langUsed.map((lang, i) => {
+          return (
+            <li style={{ background: lang[1] }} key={i}>
+              {lang[0]}
+            </li>
+          );
         })}
       </ul>
       <a href={p.url} target="_blank" rel="noreferrer">

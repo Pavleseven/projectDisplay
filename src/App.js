@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     getData(setProjects);
   }, []);
-  console.log(projects);
+
   return (
     <ApplicationProvider value={{ projects, setProjects }}>
       <div className="App">
