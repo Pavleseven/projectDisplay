@@ -143,4 +143,7 @@ a {
   .list-component {
     width: 100%;
   }
+  li {
+    width: fit-content;
+  }
 }
